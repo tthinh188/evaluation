@@ -13,25 +13,25 @@ const Footer = () => {
                     <div className="media-links">
                         <div className="col-sm-1 col-md-1 col-sm-offset-4 col-md-offset-4">
                             <div className="facebook">
-                                <a href="#"><img class="img-responsive" alt="logo" src={facebookLogo} /></a>
+                                <a href="#"><img className="img-responsive" alt="logo" src={facebookLogo} /></a>
                             </div>
                         </div>
 
                         <div className="col-sm-1 col-md-1">
                             <div className="linkedin">
-                                <a href="#"><img class="img-responsive" alt="logo" src={linkedinLogo} /></a>
+                                <a href="#"><img className="img-responsive" alt="logo" src={linkedinLogo} /></a>
                             </div>
                         </div>
 
                         <div className="col-sm-1 col-md-1">
                             <div className="pinterest">
-                                <a href="#"><img class="img-responsive" alt="logo" src={pinterestLogo} /></a>
+                                <a href="#"><img className="img-responsive" alt="logo" src={pinterestLogo} /></a>
                             </div>
                         </div>
 
                         <div className="col-sm-1 col-md-1">
                             <div className="email-icon">
-                                <a href="#"><img class="img-responsive" alt="logo" src={emailLogo} /></a>
+                                <a href="#"><img className="img-responsive" alt="logo" src={emailLogo} /></a>
                             </div>
                         </div>
                     </div>

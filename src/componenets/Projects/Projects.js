@@ -1,4 +1,11 @@
 import React from 'react'
+import Project from './Project/Project';
+
+const projects = [
+    { id: 1, projClass: 'luvtalk-project', title: 'LUV TALK Website', description: 'Website, created during my first internship, which utilized HTML, CSS, PHP, Ajax, Javascript/jQuery, and Wordpress.' },
+    { id: 2, projClass: 'personal-website-project', title: 'Personal Website', description: 'Enjoyable side project that was created to experiment with more HTML and CSS, but also provided an outlet to showcase my abilities and interests.' },
+    { id: 3, projClass: 'strike-zone-project', title: 'Strike Zone Analysis', description: 'Data analytics project completed during my time at the Illinois Math and Science Academy which studied the baseball strike zone based on the state of the game.'},
+]
 
 const Projects = () => {
     return (
@@ -21,7 +28,10 @@ const Projects = () => {
                 </div>
 
                 <div className="row">
-                    <div className="col-sm-4 col-md-4 text-center">
+                    {projects.map(project => (
+                        <Project key={project.id} projClass={project.projClass} title={project.title} description={project.description}/>
+                    ))}
+                    {/* <div className="col-sm-4 col-md-4 text-center">
                         <div className="luvtalk-project">
                             <h3>LUV TALK Website</h3>
                             <p>Website, created during my first internship, which utilized HTML, CSS, PHP, Ajax, Javascript/jQuery, and Wordpress. </p>
@@ -33,9 +43,9 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
-                    <div className="col-sm-4 col-md-4 text-center">
+                    {/* <div className="col-sm-4 col-md-4 text-center">
                         <div className="personal-website-project">
                             <h3>Personal Website</h3>
                             <p>Enjoyable side project that was created to experiment with more HTML and CSS, but also provided an outlet to showcase my abilities and interests.</p>
@@ -47,9 +57,9 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
-                    <div className="col-sm-4 col-md-4 text-center">
+                    {/* <div className="col-sm-4 col-md-4 text-center">
                         <div className="strike-zone-project">
                             <h3>Strike Zone Analysis</h3>
                             <p>Data analytics project completed during my time at the Illinois Math and Science Academy which studied the baseball strike zone based on the state of the game.</p>
@@ -61,7 +71,7 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="row">

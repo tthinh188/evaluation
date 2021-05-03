@@ -13,7 +13,7 @@ const Contact = () => {
         e.preventDefault();
         console.log(contactFormData)
     }
-    
+
     return (
         <div className="contact" id="contact">
             <div className="container-fluid">
@@ -90,7 +90,7 @@ const Contact = () => {
                                 <div className="row">
                                     <div className="col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4">
                                         <div className="submit-contact">
-                                            <button className = "btn btn-default btn-border" type='submit'>Submit</button>
+                                            <button className="btn btn-default btn-border" type='submit'>Submit</button>
                                         </div>
                                     </div>
                                 </div>

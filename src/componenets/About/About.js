@@ -49,8 +49,8 @@ const About = () => {
 
 				<div className = "row">
 					<div className = "about-option-buttons">
-						<div class = "col-sm-2 col-md-2">
-							<a href = "#contact" class = "btn btn-default btn-black-border">Contact</a>
+						<div className = "col-sm-2 col-md-2">
+							<a href = "#contact" className = "btn btn-default btn-black-border">Contact</a>
 						</div>
 					</div>
 				</div>

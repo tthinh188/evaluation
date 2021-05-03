@@ -65,7 +65,7 @@ html {
   .submit-contact .btn-border,
   .projects .btn-border {
     background-color: transparent;
-    width: 100%;
+    width: fit-content;
     margin-top: 40px;
     color: white;
     font-family: "Roboto", Helvetica, serif;
@@ -279,11 +279,13 @@ html {
   .message {
     margin: 15px 0px;
   }
+
   .contact input,
   .contact textarea {
     width: 100%;
     padding: 10px;
     margin: 3px 0px;
+    color: black;
   }
   
   .submit-contact .btn-border {
@@ -305,7 +307,9 @@ html {
   .pinterest,
   .email-icon {
     padding: 31%;
+
   }
+
   .footer img {
     background-color: #8a8a8a;
     -webkit-transition: all 200ms ease-out;
@@ -313,11 +317,13 @@ html {
     -o-transition: all 200ms ease-out;
     -ms-transition: all 200ms ease-out;
     transition: all 200ms ease-out;
+
   }
   
   .footer img:hover {
     background-color: white;
   }
+
   .company-information,
   .home-footer,
   .portfolio-footer,
@@ -336,12 +342,39 @@ html {
   .contact-footer a {
     color: white;
   }
-  .home-footer a:hover,
+
+  /* .home-footer a:hover,
   .portfolio-footer a:hover,
   .resume-footer a:hover,
   .contact-footer a:hover {
-  }
+  } */
   
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+  .contact {
+    padding: 40px 0;
+  }
 
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer .phone {
+    text-align: left;
+  }
+
+  .facebook,
+  .linkedin,
+  .pinterest,
+  .email-icon {
+    padding: 20px 0;
+    margin: auto;
+    width: 50px;
+  }
+
+  .banner-buttons .btn-border,
+  .submit-contact .btn-border,
+  .projects .btn-border {
+    width: 100%;
+  }
 }

@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import './App.css';
 import './boostrap/css/bootstrap.min.css';
 import Navbar from './componenets/Navbar/Navbar';
 import $ from 'jquery';
